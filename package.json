@@ -1,0 +1,37 @@
+{
+  "name": "color-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@babel/core": "^7.13.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "html-webpack-plugin": "^5.2.0",
+    "jquery": "^3.5.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dashboard": "^3.3.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack serve --history-api-fallback --inline --open",
+    "build": "npm run clear -s && webpack --progress",
+    "start": "webpack-dashboard webpack-dev-server",
+    "watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaNam/color-slider.git"
+  },
+  "author": "Kirillova Elena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElenaNam/color-slider/issues"
+  },
+  "homepage": "https://github.com/ElenaNam/color-slider#readme"
+}
