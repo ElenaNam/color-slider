@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: cornsilk;
 }
 ul {
   padding: 0;
@@ -12,7 +13,6 @@ li {
 }
 #root {
   padding: 20px;
-  /* border: 1px solid rgb(92, 80, 255); */
   margin: 100px auto 0;
   width: 1000px;
   vertical-align: middle;
@@ -37,7 +37,6 @@ li {
 .input:hover {
   cursor: pointer;
   background-color: rgb(143, 204, 253);
-  /*  color: white; */
 }
 .input:active {
   cursor: pointer;
@@ -57,21 +56,46 @@ li {
 }
 .slider-block {
   display: flex;
-  background-color: rgb(207, 128, 9);
-  width: 60%;
-  height: 300px;
-}
-.text-block {
-  padding: 10px;
-  display: flex;
-  border: 1px solid rgb(192, 188, 188);
-  /* background-color: rgb(207, 9, 25); */
-  width: 30%;
-  height: 100px;
+  flex-direction: column;
 }
 .text {
   margin: 0;
   font-size: 12px;
   text-align: left;
-  color: red;
+}
+
+#swatch {
+  width: 30%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+}
+.ui-slider-handle {
+  cursor: pointer;
+}
+
+#red .ui-slider-range {
+  background: #ef2929;
+}
+#red .ui-slider-handle {
+  border-color: #ef2929;
+}
+#green .ui-slider-range {
+  background: #8ae234;
+}
+#green .ui-slider-handle {
+  border-color: #8ae234;
+}
+#blue .ui-slider-range {
+  background: #729fcf;
+}
+#blue .ui-slider-handle {
+  border-color: #729fcf;
+}
+#red,
+#green,
+#blue {
+  float: left;
+  width: 400px;
+  margin: 15px;
 }
