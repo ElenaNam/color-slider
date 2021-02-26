@@ -19,6 +19,7 @@ function setDMode() {
 
 
 const config = {
+  target: "web",
   entry: __dirname + "/src/app/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -60,12 +61,7 @@ const config = {
 
 if (isProd) {
   config.plugins.push(
-    new UglifyJSPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: __dirname + "/src/public",
-      },
-    ])
+    new UglifyJSPlugin(),    
   );
 }
 module.exports = config;
