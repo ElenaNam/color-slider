@@ -2,6 +2,7 @@ import $ from "jquery";
 import '../style/style.css';
 require("jquery-ui/ui/widgets/slider");
 
+
 $(function(){
   let form = $("<form/>", {
     action: "/",
@@ -77,7 +78,6 @@ $(function(){
       blue = $("#blue").slider("value"),
       hex = hexFromRGB(red, green, blue);
     $("#swatch").css(`${prop}`, "#" + hex);
-    console.log(prop) 
   }
 
   $(function () {

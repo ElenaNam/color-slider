@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "webpack serve --history-api-fallback --inline --open",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --mode production",
     "start": "webpack-dashboard webpack-dev-server",
     "watch": "webpack --mode development --watch"
   },

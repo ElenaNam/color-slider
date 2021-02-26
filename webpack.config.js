@@ -24,7 +24,6 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/",
   },
   devtool: isProd ? false : "source-map",
   module: {
@@ -55,7 +54,9 @@ const config = {
     clientLogLevel: "none",
   },
   mode: setDMode(),
-  externals: ["jquery"],
+  externals: {
+    jquery: "jQuery",
+  },
 };
 
 
